@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>第二种实现方式</title>
+</head>
+<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.rating {
+		width: 180px;
+		height: 25px;
+		margin: 100px auto;
+	}
+
+	.rating-item {
+		height: 25px;
+		width: 25px;
+		float: left;
+		background: url(../img/start.png) no-repeat;
+		/* background-position: 0 -50px; */
+		cursor: pointer;
+		margin: 5px;
+	}
+</style>
+
+<body>
+
+
+	<!-- 第二种实现方式 -->
+	<ul class="rating rating1">
+		<!-- i.rating-item[title]*5 -->
+		<li class="rating-item" title="很不好"></li>
+		<li class="rating-item" title="不好"></li>
+		<li class="rating-item" title="一般"></li>
+		<li class="rating-item" title="好"></li>
+		<li class="rating-item" title="很好"></li>
+	</ul>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jQuery-starScore-entire.js.js"></script>
+</body>
+<script type="text/javascript">
+	rating.init('.rating1', 2);
+</script>
+</html>
