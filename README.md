@@ -15,8 +15,5 @@
 rating.init('.rating1', {
 	mode: 'LightHalf',     //模式选择，LightHalf/LightEntire
 	num: 2.5,              //初始化点亮颗数，最小为0，以0。5为阶梯 
-	chosen: function () {  
-		rating.init('.rating')
-	}
 });
 ```
