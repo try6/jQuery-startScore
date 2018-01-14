@@ -50,11 +50,8 @@
     <script>
         //使用方法
         rating.init('.rating1', {
-            mode: 'LightHalf',
-            num: 2.5,
-            chosen: function() {
-                rating.init('.rating')
-            }
+            mode: 'LightHalf', //  LightHalf/LightEntire
+            num: 2.5, //点亮初始值
         });
         $('.rating').on('select', function(e, num, total) {
             console.log(num + '/' + total);
